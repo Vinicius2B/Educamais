@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+.area-principal{
+    display: grid;
+    grid-template-columns: 1fr(repeat(3));
+    grid-template-areas: 
+    "texto texto texto"
+    "texto-exemplo-cima texto-exemplo-cima texto-exemplo-cima"
+    "a     b     c"
+    "d     e     f";
+    gap: 4rem;
+    margin-bottom: 100px;
+}
+
+.a, .b, .c, .d, .e, .f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 9px;
+    color: black;
+    text-align: justify;
+
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.a{
+    grid-area: a;
+    height: 200px;
+    background-color: white;
+}
+
+.b{
+    grid-area: b;
+    height: 200px;
+    background-color: white;
+}
+
+.c{
+    grid-area: c;
+    height: 200px;
+    background-color: white;
+}
+
+.d{
+    grid-area: d;
+    height: 200px;
+    background-color: white;
+}
+
+.e{
+    grid-area: e;
+    height: 200px;
+    background-color: white;
+}
+
+.f{
+    grid-area: f;
+    height: 200px;
+    background-color: white;
+}
+
+.div-texto-1{
+    grid-area: texto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: black;
+}
+
+.texto-exemplo-cima{
+    grid-column: span 3;
+    width: 100rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+}
